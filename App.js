@@ -3,9 +3,7 @@ import data from './data.js';
 import Card from './Card.js';
 import Header from './Header.js';
 
-const key = `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`;
-const url = `https://api.openai.com/v1/images/generations`;
-const bearer = 'Bearer ' + key;
+//hello
 
 export default function App() {
   console.log('above fetch in app');

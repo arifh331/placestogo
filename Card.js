@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-const key = `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`;
+require('dotenv').config();
+const apikey = process.env.API_KEY;
+
+
 const url = `https://api.openai.com/v1/images/generations`;
-const bearer = 'Bearer ' + key;
+const bearer = 'Bearer ' + apikey;
 const paramdesc = 'Generate a visually imposing image from this description in the style of 90s anime: ';
 
 export default function Card(props) {
